@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  script-runner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python-runner
+    volumes:
+      - ./data:/app/data
